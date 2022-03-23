@@ -37,3 +37,30 @@ Employee employee2 = new CommissionEmployee()
     CommissionPercentaje = 0.03F
 };
 Console.WriteLine(employee2);
+
+Employee employee3 = new HourlyEmployee()
+{
+    Id = 1030,
+    FirstName = "Alicia",
+    LastName = "García Cervantes",
+    BirthDate = new Date(1970, 06, 21),
+    HiringDate = new Date(2022, 03, 03),
+    IsActive = true,
+    HourValue = 50.0M,
+    Hours = 123.5F
+};
+Console.WriteLine(employee3);
+
+Employee employee4 = new BaseCommissionEmployee()
+{
+    Id = 1040,
+    FirstName = "Gonzalo",
+    LastName = "Ortega García",
+    BirthDate = new Date(1988, 02, 19),
+    HiringDate = new Date(2022, 03, 04),
+    IsActive = true,
+    Base = 1200M,
+    Sales = 100000,
+    CommissionPercentaje = 0.05F
+};
+Console.WriteLine(employee4);
